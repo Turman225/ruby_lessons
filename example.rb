@@ -12,11 +12,7 @@ puts "Выберите вашу страну: 1 - Япония, 2 - США, 3 - 
 
 country = gets.to_i
 
-if ((country == 1 || country == 2) && age >= 21)
-    
-    puts "Доступ разрешен"
-    
-elsif country == 3 && age >= 18
+if (age >= 21) || (age >= 18 && (country != 1 && country != 2))
     
     puts "Доступ разрешен"
 
